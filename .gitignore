@@ -1,0 +1,29 @@
+# Dependency directories
+**/node_modules/
+
+
+# Obsidian workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+# Common frontend package manager artifacts
+**/.pnpm-store/
+**/.npm/
+**/.yarn/
+
+#任何ai agent
+.codex/
+.claude/
+.trae/
+.workbuddy/
+
+
+# Common build outputs
+**/dist/
+**/dist-ssr/
+**/release/
+
+# OS files
+.DS_Store
+
+**/.idea/
