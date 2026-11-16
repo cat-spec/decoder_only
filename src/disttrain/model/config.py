@@ -8,7 +8,7 @@ class MymodeConfig:
     #词向量维度
     d_model: int = 256
     #层数大小
-    n_layers: int = 8
+    n_layers: int = 4
     #头数
     n_heads: int = 4
     #模型能接受的最大seq长度

@@ -1,0 +1,2 @@
+2026-11-16 11:26:05,783 root         DEBUG    dp_meshDeviceMesh('cuda', [0, 2], mesh_dim_names=('DP',)),tp_meshDeviceMesh('cuda', [2, 3], mesh_dim_names=('TP',)),dp_rank:1,tp_rank:0
+2026-11-16 11:26:06,231 root         DEBUG    model.layer.0.attention.q_projtorch.Size([64, 256])
