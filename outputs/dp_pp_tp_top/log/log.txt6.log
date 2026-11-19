@@ -1,0 +1,71 @@
+pp_mesh: 2
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(6.9840, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.9839, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.9843, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.9844, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(6.8926, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.8925, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.8925, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.8932, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(6.7950, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.7958, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.7948, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.7945, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(6.6504, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.6469, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.6423, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.6507, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(6.4949, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.4984, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.4939, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.4867, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(6.3109, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.3090, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.3101, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.3070, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(6.1677, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.1650, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.1639, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.1565, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(6.0589, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.0507, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.0340, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(6.0435, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(5.8207, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.8177, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.8076, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.8149, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(5.5583, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.5601, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.5574, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.5804, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(5.3353, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.3318, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.3313, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.3379, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(5.0309, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.0404, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.0252, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(5.0392, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+losses: [tensor(4.8497, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(4.8420, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(4.8440, device='cuda:6', grad_fn=<NllLossBackward0>), tensor(4.8385, device='cuda:6', grad_fn=<NllLossBackward0>)]
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])
+hidden: torch.Size([64, 1024, 256])

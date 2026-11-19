@@ -19,7 +19,7 @@ from torch.distributed.tensor.parallel import (
 parallelize_module,ColwiseParallel,RowwiseParallel
 )
 #这个的作用是什么
-from torch.distributed.tensor import Replicate
+from torch.distributed.tensor import Replicate,Partial,Shard
 from torch.distributed.fsdp import fully_shard
 from torch.distributed.checkpoint.state_dict import (
     get_state_dict,
@@ -33,7 +33,6 @@ from src.disttrain.data import TokenDataset
 #参数工程化
 def parse_args():
     p = argparse.ArgumentParser()
-
 
     p.add_argument("--bf16", action="store_true")
     p.add_argument("--log-every", type=int, default=10)
@@ -86,7 +85,6 @@ def init_log(log_dir:Path):
 log_dir = Path('outputs/tp2_fsdp2/logs')
 log_dir.mkdir(parents=True, exist_ok=True)
 loger = init_log(log_dir)
-
 
 #初始化通信组
 def init_dist():
@@ -173,7 +171,6 @@ def load_checkpoint(model,optimizer,folder,args):
     meta=torch.load(
         folder / "trainer.pt",
         map_location="cpu",
-
     )
     for key in ("batch_size", "seed", "seq_len", "lr", "bf16"):
         if meta[key] != getattr(args, key):

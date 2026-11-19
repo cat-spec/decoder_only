@@ -15,15 +15,12 @@ class RMSNorm(nn.Module):
         x32=x.float()
         normmalized=x32*torch.rsqrt(x32.square().mean(dim=-1,keepdim=True)+self.eps)
         return normmalized.to(x.dtype)*self.weight.to(x.dtype)
-
 class RotaryEmbedding(nn.Module):
     """Interleaved RoPE: feature pairs (0,1), (2,3), ... are rotated."""
-
     def __init__(self, head_dim: int, theta: float) -> None:
         super().__init__()
         inv_freq = 1.0 / (theta ** (torch.arange(0, head_dim, 2, dtype=torch.float32) / head_dim))
         self.register_buffer("inv_freq", inv_freq, persistent=False)
-
     def forward(self, seq_len: int, dtype: torch.dtype) -> tuple[Tensor, Tensor]:
         positions = torch.arange(seq_len, dtype=torch.float32, device=self.inv_freq.device)
         angles = torch.outer(positions, self.inv_freq)
@@ -34,7 +31,6 @@ def apply_rope(x: Tensor, cos: Tensor, sin: Tensor) -> Tensor:
     sin = sin[None, None, :, :]
     even, odd = x[..., 0::2], x[..., 1::2]
     return torch.stack((even * cos - odd * sin, even * sin + odd * cos), dim=-1).flatten(-2)
-
 class Causal_Attention(nn.Module):
     def __init__(self, cfg:MymodeConfig):
         super().__init__()
@@ -88,7 +84,6 @@ class DecoderLayer(nn.Module):
         self.rope = RotaryEmbedding(cfg.d_model // cfg.n_heads, cfg.rope_theta)
         self.final_norm=RMSNorm(cfg.d_model)
         self.mlp=nn.Linear(cfg.d_model, cfg.vocab_size,bias=False)
-
     @staticmethod
     def _init_weights(module: nn.Module) -> None:
         if isinstance(module, (nn.Linear, nn.Embedding)):

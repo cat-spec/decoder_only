@@ -15,5 +15,5 @@ torchrun \
   --seq-len 512 \
   --n-layers 4\
   --n-heads 8\
-  --output outputs/tp2_fsdp2
+  --output outputs/tp2_fsdp2_2080
 

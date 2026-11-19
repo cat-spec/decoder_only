@@ -22,6 +22,10 @@
 **/dist/
 **/dist-ssr/
 **/release/
+**/.distcp
+**/.pt
+**/.metadata
+*/outputs/
 
 # OS files
 .DS_Store
