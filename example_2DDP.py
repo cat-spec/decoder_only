@@ -18,8 +18,6 @@ from contextlib import nullcontext
 from src.disttrain.data import TokenDataset
 from src.disttrain.model import MymodeConfig,DecoderLayer
 
-
-
 FIELDS = [
     "step", "loss", "lr", "grad_norm",
     "data_ms", "h2d_ms", "compute_ms",
@@ -74,7 +72,6 @@ def save_checkpoint(
     run_signature, device,
 ):
     path.parent.mkdir(parents=True, exist_ok=True)
-
     state = {
         "step": step,
         "model": model.state_dict(),
@@ -135,7 +132,6 @@ def prepare_metrics(path, resume_step):
     writer.writerows(previous_rows)
     f.flush()
     return f, writer
-
 def check_parameters(ddp, device):
     # 训练结束后逐个参数与 Rank 0 对照
     max_diff = torch.zeros((), device=device)
@@ -148,12 +144,10 @@ def check_parameters(ddp, device):
             )
     dist.all_reduce(max_diff, op=dist.ReduceOp.MAX)
     return max_diff.item()
-
 def main():
     args = parse_args()
     if not args.cpu and torch.cuda.device_count() < 2:
         raise RuntimeError("Two visible CUDA GPUs required; use --cpu for Gloo smoke test")
-
     if args.steps <= 0 or args.batch_size <= 0:
         raise ValueError("steps and batch_size must be positive")
     if args.seq_len <= 0 or args.log_every <= 0:

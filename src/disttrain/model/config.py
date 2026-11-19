@@ -5,15 +5,15 @@ from dataclasses import dataclass
 class MymodeConfig:
     #词表大小
     vocab_size: int = 1024
-    #词向量维度
+    #qkv大小
     d_model: int = 256
     #层数大小
     n_layers: int = 4
     #头数
-    n_heads: int = 4
+    n_heads: int = 8
     #模型能接受的最大seq长度
     max_seq_len: int = 128
-    #隐藏层维度
+    #swilu大小
     mlp_hidden_dim: int = 1024
     #归一化，防止分母为0
     rms_eps: float = 1e-5

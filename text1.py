@@ -1,6 +1,4 @@
 import torch
-from torch.distributed.tensor import Replicate
-from torch.distributed.fsdp import fully_shard
-
-print(torch.__version__)
-print(Replicate)
+a=torch.randn(2,3)
+x=torch.stack([a[i] for i in range(2)])
+print(x.shape)
